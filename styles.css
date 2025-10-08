@@ -17,6 +17,11 @@ body {
   line-height: 1.6;
 }
 
+.CV {
+  text-decoration: none;
+  color:#009cbf;
+}
+
 /* Header */
 #nav {
   background-color: #1e1e1e;
