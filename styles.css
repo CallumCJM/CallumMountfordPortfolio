@@ -1,0 +1,179 @@
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #272727;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+#nav {
+  background-color: #1e1e1e;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #009cbf;
+}
+.logo .short-logo {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .logo .full-logo {
+    display: none;
+  }
+
+  .logo .short-logo {
+    display: inline;
+  }
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: #009cbf;
+}
+
+/* Sections */
+.section {
+  padding: 120px 20px 80px;
+}
+
+.dark {
+  background-color: #323232;
+}
+
+.light {
+  background-color: #505050;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Home Section */
+#showReel {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #009cbf;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 30px 0 10px;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+/* Project Cards */
+.project-card {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.project-card video,
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
+.project-buttons {
+  margin-top: 15px;
+}
+
+.project-buttons button {
+  background-color: #009cbf;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+  color: #222;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-buttons button:hover {
+  background-color: #00657c;
+}
+
+.project-section {
+  display: none;
+  margin-top: 20px;
+  background-color: #444;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.section-content img {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #1e1e1e;
+  color: #ccc;
+  padding: 20px;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #0099ad;
+  text-decoration: none;
+}

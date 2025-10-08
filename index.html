@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Callum Mountford Game Design & Programming Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav id="nav">
+      <div class="logo">
+        <span class="full-logo">Callum Mountford Games Design & Programmer</span>
+        <span class="short-logo">CM</span>
+        </div>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#aboutMe">About Me</a>
+        <a href="#gameProjects">Game Projects</a>
+        <a href="#professionalProjects">Professional Projects</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <video id="showReel" src="Videos/ShowReel.mp4" autoplay muted loop></video>
+    </section>
+
+    <section id="aboutMe" class="section dark">
+      <div class="container">
+        <h1>About Me</h1>
+        <p>
+          I’m Callum Mountford, a second-year games design and programming student with a creative background in the music industry. While I am still early in my game development journey, I bring with me a strong understanding of the creative process and a drive to keep learning and improving.
+I embrace challenges and actively pursue new skills to deliver the best results, like making this website to showcase my work.
+
+          <br><br>
+          Here, you can explore some of my game projects built in Unity and Unreal, showcasing my skills in C# and C++.
+        </p>
+      </div>
+    </section>
+
+    <section id="gameProjects" class="section light">
+      <div class="container">
+        <h1>Game Projects</h1>
+
+        <div class="project-card">
+  <h2>Unreal: <em>Defective</em></h2>
+  <video src="Videos/Full Game Unreal.mp4" autoplay muted loop></video>
+
+  <div class="project-buttons">
+    <button onclick="toggleSection(this)">About Project</button>
+    <button onclick="toggleSection(this)">GDD</button>
+    <button onclick="toggleSection(this)">Code</button>
+  </div>
+
+  <div class="project-section">
+    <div class="section-content">
+      <h3>Skills:</h3>
+      <p>Unreal Engine<br/>Blueprint<br/>C++<br/>Level Design<br/>Simple AI Behaviour</p>
+      <h3>Role:</h3>
+      <p>Full Development (Design, Programming, Writing)</p>
+      <h3>Time:</h3>
+      <p>8 Weeks</p>
+      <p>Defective is a top-down action game created using Unreal Engine 5 with Blueprint. 
+        The visuals draw inspiration from games like “Ratchet & Clank: Rift Apart” and “Stray.” 
+        This project marked my first experience working with Unreal.
+The game's setting is a dystopian construction site where a new city is being built in the 
+desert. Players take on the role of a machine that has been liberated from its work protocol, 
+aiming to escape while battling security forces.
+The focus of the project is on level design, action, and weapon mechanics. The game systems 
+evolve as players progress through the levels, featuring pickups and progressively introducing new enemy weapon types.
+</p>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <div class="section-content">
+      <img src="Images/Unreal1GDD.png" alt="GDD page 1" />
+      <img src="Images/Unreal2GDD.png" alt="GDD page 2" />
+      <img src="Images/Unreal3GDD.png" alt="GDD page 3" />
+      <img src="Images/Unreal4GDD.png" alt="GDD page 4" />
+    </div>
+  </div>
+
+  <div class="project-section">
+    <div class="section-content">
+      <img src="Images/Chaser.png" alt="AI Blueprint" />
+      <p>AI Behaviour: Using the navmesh system to create areas where the enemies could navigate. For the different enemy types
+        there was different behaviour such as a chaser that follows the player, a randomly moving enemy and an enemy that can spawn others. 
+      <p>Player Controller: Extended the existing player controller framework by implementing a 
+        health and damage system, player death state, and enhanced movement mechanics. 
+        Added features such as temporary speed boosts to improve gameplay dynamics and responsiveness</p>
+        <img src="Images/Box.png" alt="Niagara Blueprint" />
+      <p>Box Explosion: Implemented timed explosive boxes inspired by “Ratchet & Clank”, featuring visual 
+        cues and delayed detonation. Utilised the Niagara particle system to create custom explosion effects 
+        and flashing indicators, enhancing the game's visual feedback.</p>
+      <p>Weapons: Designed a modular weapon architecture using parent classes for both 
+        weapons and projectiles. This structure allowed easy creation and extension of weapon 
+        types with unique behaviour and stats, such as a high-rate blaster, a powerful slow-firing 
+        disk launcher, and a one-shot lightning weapon capable of eliminating weaker enemies.</p>
+      <img src="Images/Lava.png" alt="Lava Blueprint" />
+      <p>Lava: Created interactive lava pits with delayed damage-over-time effects to add environmental 
+        challenge. Integrated collision and timing logic to encourage careful navigation.</p>
+      </p>
+    </div>
+  </div>
+</div>
+
+       <div class="project-card">
+  <h2>Unity: <em>One Stick, One Button</em></h2>
+  <video src="Videos/Prototype 1.mp4" autoplay muted loop></video>
+
+  <div class="project-buttons">
+    <button onclick="toggleSection(this)">About Project</button>
+    <button onclick="toggleSection(this)">GDD</button>
+    <button onclick="toggleSection(this)">Code</button>
+  </div>
+
+  <div class="project-section">
+    <div class="section-content">
+      <h3>Skills:</h3>
+      <p>Unity Engine<br/>C#<br/>Agile Management<br/>Game Testing</p>
+      <h3>Role:</h3>
+      <p>Full Development (Design, Programming, Writing)</p>
+      <h3>Time:</h3>
+      <p>3 Weeks</p>
+      <p>For this prototype, the objective was to create a game 
+        within a three-week timeframe that utilizes only one stick 
+        and one button for its mechanics. Inspired by the game "Thomas Was Alone," 
+        I designed a game featuring two characters, with different jump heights, that the player must switch between 
+        to solve the puzzles in each level. Additionally, I included dialogue text to 
+        enhance the gameplay experience, providing players with a reason to connect with 
+        the two basic shapes as they follow the story of an unlikely friendship.</p>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <div class="section-content">
+      <img src="Images/P1GDDDraft.jpg" alt="GDD page 1" />
+      <img src="Images/P1LevelsGDD.jpg" alt="GDD page 2" />
+    </div>
+  </div>
+
+  <div class="project-section">
+    <div class="section-content">
+      <img src="Images/P1Swap.png" alt="Swap Player Code" />
+      <p>Character Swapping: Implemented a flexible character swap system with 
+        adjustable parameters for each playable character. Allowed for seamless switching between
+        characters during gameplay to solve level-based puzzles. This introduced me to custom movement 
+        logic in C#, deepening my understanding of player state management and input handling in Unity.</p>
+      <img src="Images/P1Input.png" alt="Input Code" />
+      <p>Input Mechanics: Designed a simple yet effective control scheme using a single stick for movement (left, right, jump) and a single 
+        button to switch characters. This input design fulfilled the project brief while enhancing 
+        gameplay variety through character-specific abilities.</p>
+      <img src="Images/P1SceneManage.png" alt="Scene Manager Code" />
+      <p>Level Management: Integrated Unity’s SceneManager to handle level transitions. Implemented logic to automatically restart the current level upon 
+        failure and load the next level upon completion, creating a smooth gameplay loop and supporting structured level progression</p>
+    </div>
+  </div>
+</div>
+
+<div class="project-card">
+  <h2>Unity: <em>Whispers Of Doubt</em></h2>
+  <video src="Videos/Prototype 2 Case Files.mp4" autoplay muted loop></video>
+
+  <div class="project-buttons">
+    <button onclick="toggleSection(this)">About Project</button>
+    <button onclick="toggleSection(this)">GDD</button>
+    <button onclick="toggleSection(this)">Code</button>
+  </div>
+
+  <div class="project-section">
+    <div class="section-content">
+      <h3>Skills:</h3>
+      <p>Unity Engine<br/>C#<br/>Canvas System UI<br/>Narrative Design</p>
+      <h3>Role:</h3>
+      <p>Full Development (Design, Programming, Writing)</p>
+      <h3>Time:</h3>
+      <p>5 Weeks</p>
+      <p>For this prototype, the objective was to create a story-driven game within a 
+        five-week timeframe. Drawing inspiration from noir-style narratives and the game 
+        “Papers, Please,” I developed quite a fun concept. 
+In this game the player must read through various case files to determine whether the suspected 
+individual is guilty or innocent. The project focused heavily on narrative design, and I aimed to 
+ensure that each case file was varied enough to allow players to make different decisions. The choices 
+you make are significant, as the case files you receive on the second day are based on the outcomes of your initial verdicts.
+</p>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <div class="section-content">
+      <img src="Images/P2GDDDraft.jpg" alt="GDD page 1" />
+      <img src="Images/P2Case1.png" alt="GDD page 2" />
+      <img src="Images/P2Case2.png" alt="GDD page 3" />
+      <img src="Images/P2Case3.png" alt="GDD page 4" />
+    </div>
+  </div>
+
+  <div class="project-section">
+    <div class="section-content">
+      <img src="Images/P2ScriptableObj.png" alt="Scriptable Object Code" />
+      <img src="Images/P2LoadData.png" alt="Load Data Code" />
+      <p>Scriptable Objects Case Files: Structured all in-game case files using ScriptableObjects to create a modular and easily 
+        maintainable data system. This allowed the game to dynamically reference player decisions in code, 
+        removing unchosen options and tailoring content to reflect player choices. Enhanced replayability and 
+        narrative depth through responsive content filtering.</p>
+      <img src="Images/P2UI.png" alt="UI Code" />
+      <p>Interactive Desk UI: Developed an interactive UI system where case file objects can be clicked, brought to the foreground, 
+        and moved freely around a virtual “desk” environment. Implemented layering logic in code to manage hierarchy order 
+        within the Unity Canvas system, enabling interactions such as enlarging selected files for better viewing.</p>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <section id="professionalProjects" class="section dark">
+      <div class="container">
+        <h1>Professional Projects</h1>
+
+        <div class="project-card">
+          <h2>Universal Production Music</h2>
+          <img src="Images/Universal Music Screenshot.png" alt="Universal Music Screenshot" />
+          <p>
+            I produced an emotional ballads album now featured in the Universal Production Music library. 
+            It has been used in <strong>Netflix’s “Without You”</strong>, the soap <strong>“Home and Away”</strong> and many other global uses.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h2>Mountford Function Band</h2>
+          <img src="Images/Mountford Screenshot.png" alt="Mountford Band Screenshot" />
+          <p>
+            I manage and perform with a function band internationally, developing skills in <strong>Leadership, communication, and problem-solving</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact Me | <a href="mailto:callumjmountford@gmail.com">callumjmountford@gmail.com</a></p>
+    <a href="https://www.linkedin.com/in/callummountford" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width:40px; vertical-align:middle;">
+    </a>
+  </footer>
+
+  <script>
+  function toggleSection(button) {
+    const allSections = button.closest('.project-card').querySelectorAll('.project-section');
+    const buttons = Array.from(button.parentElement.children);
+    const index = buttons.indexOf(button);
+
+    // Toggle only the clicked section
+    allSections.forEach((section, i) => {
+      if (i === index) {
+        section.style.display = section.style.display === 'block' ? 'none' : 'block';
+      } else {
+        section.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
